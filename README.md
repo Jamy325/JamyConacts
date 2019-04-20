@@ -1,4 +1,4 @@
-# JamyCOnacts
+# JamyConacts
 
 ----
 # 如何将ipa转成deb包
@@ -26,16 +26,16 @@ Sponsor: thebigboss.org <http://thebigboss.org>
 dev: conradkramer
 ```
 ## 3.编译生成jamyConacts.app包
-      用xcode编译成功之后, 生成jamyConacts.app
-	  复制jamyConacts.app到package/Applications/下
+ 用xcode编译成功之后, 生成jamyConacts.app
+ 复制jamyConacts.app到package/Applications/下
 ```sh
-		cp jamyConacts.app package/Applications/
+cp jamyConacts.app package/Applications/
 ```
 	  
 ## 4. 打包
    
  ```sh
-  #删除所有得.DS_Store文件.
+#删除所有得.DS_Store文件.
  find -name ".DS_Store" -depth -exec rm -rf {} \;
  #生成deb
  dpkg-db -b package xxx.deb
